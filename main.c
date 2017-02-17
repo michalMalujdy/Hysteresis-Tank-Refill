@@ -29,7 +29,7 @@ void start_pumping_fluid()
 
 void stop_pumping_fluid()
 {
-	//Turns PWM on by setting bits MD2 MD1 MD0 to respectively 0 0 0. Because MD2 and MD1 does not change its values, changing MD0 to 0 is sufficient
+	//Turns PWM off by setting bits MD2 MD1 MD0 to respectively 0 0 0. Because MD2 and MD1 does not change its values, changing MD0 to 0 is sufficient
 	PWMCON &= ~(1 << 4);
 }
 
